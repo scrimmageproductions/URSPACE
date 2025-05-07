@@ -189,4 +189,39 @@ footer {
         width: 100px;
         height: 100px;
     }
+}/* Contribution List */
+.contrib-list {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #f0f0f0;
+    border-radius: 8px;
+}
+
+.contrib-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.contrib-item:last-child {
+    border-bottom: none;
+}
+
+.contrib-item p {
+    margin: 0;
+}
+
+.contrib-item button {
+    background: #4ecdc4;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contrib-item button:hover {
+    background: #3ab0a9;
 }
