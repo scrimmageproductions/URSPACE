@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URSPACE - Collaborative Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>URSPACE</h1>
+        <nav>
+            <a href="#profile">Profile</a>
+            <a href="#contribute" onclick="openContributeModal()">Contribute</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile">
+            <div class="profile-container">
+                <div class="profile-header">
+                    <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic">
+                    <h2>Username's URSPACE</h2>
+                    <p class="status">Feeling: ✨ Creative ✨</p>
+                </div>
+                <div class="profile-content">
+                    <div class="bio">
+                        <h3>About Me</h3>
+                        <p id="bio-content">Hey! I'm just chilling in URSPACE. My friends and team make this page awesome by adding their own flair. What's your vibe?</p>
+                    </div>
+                    <div class="interests">
+                        <h3>Interests</h3>
+                        <ul id="interests-content">
+                            <li>Music</li>
+                            <li>Coding</li>
+                            <li>Art</li>
+                        </ul>
+                    </div>
+                    <div class="vibe">
+                        <h3>The Vibe</h3>
+                        <div id="vibe-content" class="vibe-box">
+                            <!-- Collaborative content goes here -->
+                            <p>Welcome to my space! Add your touch below.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contribute Modal -->
+    <div id="contribute-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeContributeModal()">&times;</span>
+            <h2>Contribute to Username's URSPACE</h2>
+            <form id="contribute-form">
+                <label for="html-input">HTML Snippet:</label>
+                <textarea id="html-input" placeholder="Add HTML (e.g., <p>Hi!</p>)" rows="4"></textarea>
+                <label for="css-input">CSS Snippet:</label>
+                <textarea id="css-input" placeholder="Add CSS (e.g., .vibe-box { background: pink; })" rows="4"></textarea>
+                <button type="submit">Submit Contribution</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 URSPACE. Built for fun and collaboration.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
